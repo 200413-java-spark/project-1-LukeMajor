@@ -7,7 +7,12 @@
   <packaging>war</packaging>
   <name>Sparky</name>
   
- <dependencies>
+  <properties>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+	</properties>
+
+	<dependencies>
 		<!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
 		<dependency>
 			<groupId>javax.servlet</groupId>
@@ -15,7 +20,16 @@
 			<version>4.0.1</version>
 			<scope>provided</scope>
 		</dependency>
+
+		<dependency>
+			<groupId>org.apache.spark</groupId>
+			<artifactId>spark-core_2.12</artifactId>
+			<version>2.4.5</version>
+		</dependency>
+		
+		
 	</dependencies>
+
   
   <description>I don't know what I'm going to do with this yet</description>
 </project>
